@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+	<form action="1.php" method="post">
+		<!-- 表单分组 -->
+		<fieldset>
+			<legend>分组信息</legend>
+		</fieldset>
+		<!-- 文本输入框 -->
+		<!-- maxlength：控制输入最大长度 -->
+		<!-- readonly="readonly"：只读，不让输入 -->
+		<!-- disable="disable"：输入框不激活 -->
+		用户名：<input type="text" name="username" maxlength="6" value="默认值">
+		<br>
+		<br>
+		<!-- 密码输入框 -->
+		密码：<input type="password" name="password">
+		<br>
+		<br>
+		<!-- 单选框 -->
+		<!-- checked：设置默认选中项 -->
+		<input type="radio" name="gender" checked="checked">男
+		<input type="radio" name="gender">女
+		<br>
+		<br>
+		<!-- 下拉列表 -->
+		<!-- selected：设置默认选中项 -->
+		省（市）：<select name="select" id="select">
+					<option>广东省</option>
+					<option>上海市</option>
+					<option selected="selected">北京市</option>
+				  </select>
+		<!-- 分组选项 -->
+		市（区）：<select>
+					<optgroup label="北京市">
+						<option>朝阳区</option>
+						<option>大兴区</option>
+					</optgroup>
+				  </select>
+		<br>
+		<br>
+		<!-- 多选框 -->
+		<input type="checkbox" checked="checked">篮球
+		<input type="checkbox">足球
+		<input type="checkbox">排球
+		<br>
+		<br>
+		<!-- 多行文本框 -->
+		<textarea cols="130" rows="10"></textarea>
+		<br>
+		<br>
+		<!-- 文件上传控件 -->
+		<input type="file">
+		<br>
+		<br>
+		<!-- 文本提交按钮，实现不了文本的提交 -->
+		<input type="submit" value="普通按钮">
+		<br>
+		<br>
+		<!-- 图片提交按钮，可实现文本的提交 -->
+		<input type="image" src="button.jpg">
+		<br>
+		<br>
+		<!-- 重置按钮 -->
+		<input type="reset">
+	</form>
+	
+
+	
+</body>
+</html>
